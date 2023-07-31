@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+  --iriscolor: #4d5ae5;
+  --navyblue: #2e2f42;
+  --navcolor: black;
+  --oceancolor: #404bbf;
+  --whitecolor: white;
+  --slatecolor: #434455;
+  --cloud: #f4f4fd;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--slatecolor);
+}
+
+.logo-link {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 0;
+  font-weight: 800;
+}
+
+.logo-link > span {
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
+.button {
+  border-color: transparent;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button.primary {
+  color: var(--whitecolor);
+  background-color: var(--iriscolor);
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  display: block;
+  margin: 0 auto;
+
+}
+
+.project .name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--navyblue);
+
+}
+
+.project .type {
+  color: var(--slatecolor);
+  font-weight: 400;
+  line-height: 1.87;
+}
+
+.logo {
+  color: var(--iriscolor);
+}
+
+.studio {
+  color: var(--navyblue);
+}
+
+.nav-menu .page {
+  color: var(--navcolor);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+
+/* HW3*/
+.page-header{
+  padding-top: 32px;
+  width: 100%;
+  position: center;
+  top: 0;
+}
+
+.header-cotainer{
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.contacts-menu{
+  display: flex;
+  gap: 10px;
+  float:right;
+}
+
+.title {
+  margin-top: 30px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  display: flex;
+}
+
+.description{
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  display: flex;
+}
+
+.what-we-do{
+  display: flex;
+}
+
+.projects{
+  display:flex;
+}
+
+.filters{
+  display: flex;
+  gap: 100px
+}
+/* HW3*/
+
+.list {
+  list-style-type: none;
+}
+
+.nav-menu .page:hover,
+.nav-menu .page:focus,
+.nav-menu .page.current,
+.contacts-menu .item:hover,
+.contacts-menu .item:focus {
+  color: var(--iriscolor);
+}
+
+.contacts-menu .item {
+  color: var(--slatecolor);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+
+.bg-hero {
+  background: var(--navyblue);
+}
+.bg-team {
+  background-color: var(--cloud);
+}
+
+.hero-title {
+  color: var(--whitecolor);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.button.filter {
+  background-color: var(--cloud);
+  color: var(--iriscolor);
+  font-weight: 500;
+  line-height: 1.62;
+}
+
+.button.filter:hover, .button.filter:focus, .button.filter.current {
+  background-color: var(--oceancolor);
+  color: var(--cloud);
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--oceancolor);
+}
+
+.benefits .title {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--navyblue);
+}
+
+.benefits .description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.71;
+  color: var(--slatecolor);
+}
+
+.section-title {
+  color: var(--navyblue);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.team .name {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+  text-align: center;
+}
+
+.team .position {
+  color: var(--slatecolor);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.team{
+  display: flex;
+}
+
+.bg-footer {
+  background-color: var(--navyblue);
+}
+
+.studio-footer {
+  color: var(--cloud);
+}
+
+.footer-description {
+  color: var(--cloud);
+}
