@@ -5,44 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap "
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
   </head>
   <body>
     <!--Header-->
     <header class="page-header">
-      <div class="cotainer header-container">
-      <nav class="header-navigation">
+      <div class="cotainer menu">
+      <nav class="navigation">
         <a href="./index.html" class="logo-link">
           <span class="logo">WEB</span>
           <span class="studio">STUDIO</span>
         </a>
         <ul class="nav-menu list">
-          <li>
-            <a href="./index.html" class="page current">Studio</a>
+          <li class="item">
+            <a href="./index.html" class="page current link">Studio</a>
           </li>
 
-          <li>
-            <a href="./portfolio.html" class="page">Portfolio</a>
+          <li class="item">
+            <a href="./portfolio.html" class="page link">Portfolio</a>
           </li>
 
-          <li>
-            <a href="./index.html" class="page">Contacts</a>
+          <li class="item">
+            <a href="./index.html" class="page link">Contacts</a>
           </li>
         </ul>
       </nav>
 
       <ul class="contacts-menu list">
-        <li>
-          <a class="item" href="mailto:info@devstudio.com"
+        <li class="item">
+          <a class="contact link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
 
         <li>
-          <a class="item" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          <a class="contact link" href="tel:+110001111111">+11 (000) 111-11-11</a>
         </li>
       </ul>
     </div>
@@ -51,18 +57,20 @@
     <main>
       <!--Section 1-->
       <section class="hero bg-hero">
+        <div class="container">
         <h1 class="hero-title">
           Effective Solutions <br />
           for Your Business
         </h1>
         <button type="button" class="button primary">Order Service</button>
+      </div>
       </section>
 
       <!--Section 2-->
       <section class="section">
         <div class="container">
           <ul class="benefits list">
-            <li>
+            <li class="item">
               <h3 class="title">Strategy</h3>
 
               <p class="description">
@@ -72,7 +80,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="item">
               <h3 class="title">Punctuality</h3>
 
               <p class="description">
@@ -82,7 +90,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="item">
               <h3 class="title">Diligence</h3>
 
               <p class="description">
@@ -92,7 +100,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="item">
               <h3 class="title">Technologies</h3>
 
               <p class="description">
@@ -106,14 +114,14 @@
       </section>
 
       <!--Section 3-->
-      <section class="section">
+      <section class="section" no-top-padding>
         <div class="container">
           <h2 class="section-title">What Are We Doing</h2>
           <ul class="what-we-do list">
-            <li>
+            <li class="item">
               <img src="./images/pc.jpg" alt="PC" width="370" height="300" />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/wallpaper.jpg"
                 alt="Wallpaper"
@@ -121,7 +129,7 @@
                 height="300"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/mobile.jpg"
                 alt="Mobile"
@@ -134,11 +142,11 @@
       </section>
 
       <!--Section 4-->
-      <section class="section">
+      <section class="section bg-team">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team list">
-            <li>
+            <li class="item">
               <img
                 src="./images/img-1.jpg"
                 alt="Mark"
@@ -149,7 +157,7 @@
               <p class="position">Product Designer</p>
             </li>
     
-            <li>
+            <li class="item">
               <img
                 src="./images/img-2.jpg"
                 alt="Tom"
@@ -160,7 +168,7 @@
               <p class="position">Frontend Developer</p>
             </li>
           
-            <li>
+            <li class="item">
               <img
                 src="./images/img-3.jpg"
                 alt="Camilla"
@@ -171,7 +179,7 @@
               <p class="position">Marketing</p>
             </li>
           
-            <li>
+            <li class="item">
               <img
                 src="./images/img-4.jpg"
                 alt="Daniel"
@@ -185,9 +193,10 @@
         </div>
       </section>
     </main>
-
+    
+<!--Footer-->
     <footer class="page-footer bg-footer">
-      <div>
+      <div class="container">
         <a href="./index.html" class="logo-link">
           <span class="logo">WEB</span>
           <span class="studio-footer">STUDIO</span>
