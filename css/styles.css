@@ -6,6 +6,33 @@
   --whitecolor: white;
   --slatecolor: #434455;
   --cloud: #f4f4fd;
+  --cornflower: #e7e9fc;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+  margin: 0;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+
+img{
+  display: block;
+  max-width: 100px;
+  height: auto;
 }
 
 body {
@@ -13,12 +40,40 @@ body {
   font-size: 16px;
   letter-spacing: 0.03em;
   color: var(--slatecolor);
+  background-color: var(--whitecolor);
+}
+
+link{
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section{
+  padding: 120px 0;
+}
+
+.section.no-top-padding{
+  padding-top: 0;
 }
 
 .container{
   margin: 0 auto;
-  width: 1158px;
+  width: 1200px;
   padding: 0 15px;
+}
+
+.menu,
+.navigation,
+.nav-menu,
+.contacts-menu{
+  display: flex;
+  align-items: center;
 }
 
 .logo-link {
@@ -38,9 +93,9 @@ body {
   border-color: transparent;
   font-family: inherit;
   cursor: pointer;
-  font-weight: 500;
   border-radius: 4px;
   font-size: 16px;
+  letter-spacing: 0.03em;
 }
 
 .button.primary {
@@ -48,18 +103,17 @@ body {
   background-color: var(--iriscolor);
   line-height: 1.87;
   letter-spacing: 0.06em;
-
-  display: block;
-  margin: 0 auto;
-
+  padding: 16px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15 );
 }
 
 .project .name {
   font-size: 20px;
   font-weight: 500;
   line-height: 2;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   color: var(--navyblue);
+  margin-bottom: 4px;
 
 }
 
@@ -67,6 +121,7 @@ body {
   color: var(--slatecolor);
   font-weight: 400;
   line-height: 1.87;
+  font-size: 16px;
 }
 
 .logo {
@@ -77,81 +132,75 @@ body {
   color: var(--navyblue);
 }
 
-.nav-menu .page {
+.nav-menu .page,
+.contacts-menu .contact {
   color: var(--navcolor);
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.15;
   letter-spacing: 0.02em;
-}
-
-/* HW3*/
-.page-header{
+  display: block;
   padding-top: 32px;
-  width: 100%;
-  position: center;
-  top: 0;
+  padding-bottom: 31px;
 }
 
-.header-cotainer{
-  display: flex;
-  align-items: center;
+.page-footer{
+  padding: 60px 0;
 }
 
-.header-navigation {
-  display: flex;
-  align-items: center;
+.page-header{
+  border-bottom: 1px solid var(--cornflower) ;
 }
 
 .nav-menu {
-  display: flex;
-  gap: 30px;
+  margin-left: 93px;
 }
 
 .contacts-menu{
-  display: flex;
-  gap: 10px;
-  float:right;
+  margin-left: auto ;
 }
 
-.title {
-  margin-top: 30px;
-  margin-bottom: 8px;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.36px;
-  display: flex;
-}
-
-.description{
-  margin-bottom: 30px;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.28px;
-  display: flex;
+.nav-menu .item:not(:last-child),
+.contacts-menu .item:not(:last-child){
+  margin-right: 50px;
 }
 
 .what-we-do{
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.what-we-do .item{
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .projects{
   display:flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.project-card{
+  flex-basis: calc(100% / 3 - 30px );
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .filters{
   display: flex;
-  gap: 100px
+  
+  justify-content: center;
+  margin-bottom: 50px;
 }
-/* HW3*/
 
-.list {
-  list-style-type: none;
+.filters .space +.space{
+  margin-left: 8px;
 }
 
 .nav-menu .page:hover,
@@ -162,7 +211,7 @@ body {
   color: var(--iriscolor);
 }
 
-.contacts-menu .item {
+.contacts-menu .contact {
   color: var(--slatecolor);
   text-decoration: none;
   font-weight: 400;
@@ -178,6 +227,11 @@ body {
   background-color: var(--cloud);
 }
 
+.hero{
+  padding: 200px 0;
+  text-align: center;
+}
+
 .hero-title {
   color: var(--whitecolor);
   font-size: 56px;
@@ -185,6 +239,7 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.05em;
+  margin-bottom: 30px;
 }
 
 .button.filter {
@@ -192,23 +247,44 @@ body {
   color: var(--iriscolor);
   font-weight: 500;
   line-height: 1.62;
+  padding: 12px 24px;
 }
 
-.button.filter:hover, .button.filter:focus, .button.filter.current {
+.button.filter:hover,
+.button.filter:focus,
+.button.filter.current {
   background-color: var(--oceancolor);
   color: var(--cloud);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08)
+  rgba(0, 0, 0, 0.12);
 }
 
 .button.primary:hover,
 .button.primary:focus {
   background-color: var(--oceancolor);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08)
+  rgba(0, 0, 0, 0.12);
+}
+
+.benefits{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.benefits .item{
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .benefits .title {
   font-size: 20px;
   font-weight: 500;
   color: var(--navyblue);
-  white-space: nowrap;
+  line-height: 1.14;
+  margin-bottom: 10px;
 }
 
 .benefits .description {
@@ -224,25 +300,51 @@ body {
   font-weight: 700;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.team .name,
+.team .position{
+  line-height: 1.19;
+  text-align: center;
 }
 
 .team .name {
   font-size: 20px;
   font-weight: 500;
-  letter-spacing: 0.02em;
   color: var(--navyblue);
-  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .team .position {
   color: var(--slatecolor);
   font-size: 16px;
   font-weight: 400;
-  text-align: center;
+}
+
+.substrate{
+  background-color: var(--whitecolor);
+  padding: 20px 40px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
 }
 
 .team{
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.team .item{
+  flex-basis: calc(100% / 4 - 30px) ;
+  margin-left: 30px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--whitecolor);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08)
+  rgba(0, 0, 0, 0.12);
 }
 
 .bg-footer {
@@ -255,4 +357,8 @@ body {
 
 .footer-description {
   color: var(--cloud);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 17px;
 }
