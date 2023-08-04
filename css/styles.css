@@ -15,21 +15,21 @@ h3,
 h4,
 h5,
 h6,
-p{
+p {
   margin: 0;
 }
 
-html{
+html {
   box-sizing: border-box;
 }
 
 *,
 *::after,
-*::before{
+*::before {
   box-sizing: inherit;
 }
 
-img{
+img {
   display: block;
   max-width: 100px;
   height: auto;
@@ -43,7 +43,7 @@ body {
   background-color: var(--whitecolor);
 }
 
-link{
+link {
   text-decoration: none;
   color: inherit;
 }
@@ -54,15 +54,15 @@ link{
   padding: 0;
 }
 
-.section{
+.section {
   padding: 120px 0;
 }
 
-.section.no-top-padding{
+.section.no-top-padding {
   padding-top: 0;
 }
 
-.container{
+.container {
   margin: 0 auto;
   width: 1200px;
   padding: 0 15px;
@@ -71,7 +71,7 @@ link{
 .menu,
 .navigation,
 .nav-menu,
-.contacts-menu{
+.contacts-menu {
   display: flex;
   align-items: center;
 }
@@ -104,7 +104,7 @@ link{
   line-height: 1.87;
   letter-spacing: 0.06em;
   padding: 16px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15 );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .project .name {
@@ -114,7 +114,6 @@ link{
   letter-spacing: 0.06em;
   color: var(--navyblue);
   margin-bottom: 4px;
-
 }
 
 .project .type {
@@ -145,61 +144,61 @@ link{
   padding-bottom: 31px;
 }
 
-.page-footer{
+.page-footer {
   padding: 60px 0;
 }
 
-.page-header{
-  border-bottom: 1px solid var(--cornflower) ;
+.page-header {
+  border-bottom: 1px solid var(--cornflower);
 }
 
 .nav-menu {
   margin-left: 93px;
 }
 
-.contacts-menu{
-  margin-left: auto ;
+.contacts-menu {
+  margin-left: auto;
 }
 
 .nav-menu .item:not(:last-child),
-.contacts-menu .item:not(:last-child){
+.contacts-menu .item:not(:last-child) {
   margin-right: 50px;
 }
 
-.what-we-do{
+.what-we-do {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.what-we-do .item{
+.what-we-do .item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.projects{
-  display:flex;
+.projects {
+  display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.project-card{
-  flex-basis: calc(100% / 3 - 30px );
+.project-card {
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.filters{
+.filters {
   display: flex;
-  
+
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filters .space +.space{
+.filters .space + .space {
   margin-left: 8px;
 }
 
@@ -227,7 +226,7 @@ link{
   background-color: var(--cloud);
 }
 
-.hero{
+.hero {
   padding: 200px 0;
   text-align: center;
 }
@@ -255,25 +254,25 @@ link{
 .button.filter.current {
   background-color: var(--oceancolor);
   color: var(--cloud);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08)
-  rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.12);
 }
 
 .button.primary:hover,
 .button.primary:focus {
   background-color: var(--oceancolor);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08)
-  rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.12);
 }
 
-.benefits{
+.benefits {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.benefits .item{
+.benefits .item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -304,7 +303,7 @@ link{
 }
 
 .team .name,
-.team .position{
+.team .position {
   line-height: 1.19;
   text-align: center;
 }
@@ -323,28 +322,28 @@ link{
   font-weight: 400;
 }
 
-.substrate{
+.substrate {
   background-color: var(--whitecolor);
   padding: 20px 40px;
   border: 1px solid #eeeeee;
   border-top: 0;
 }
 
-.team{
+.team {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.team .item{
-  flex-basis: calc(100% / 4 - 30px) ;
+.team .item {
+  flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
   padding-bottom: 30px;
   background-color: var(--whitecolor);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08)
-  rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.12);
 }
 
 .bg-footer {
