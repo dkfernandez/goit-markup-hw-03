@@ -31,7 +31,7 @@ html {
 
 img {
   display: block;
-  max-width: 100px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -107,6 +107,10 @@ link {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.link{
+  text-decoration: none;
+}
+
 .project .name {
   font-size: 20px;
   font-weight: 500;
@@ -174,8 +178,8 @@ link {
 
 .what-we-do .item {
   flex-basis: calc(100% / 3 - 30px);
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .projects {
@@ -205,8 +209,8 @@ link {
 .nav-menu .page:hover,
 .nav-menu .page:focus,
 .nav-menu .page.current,
-.contacts-menu .item:hover,
-.contacts-menu .item:focus {
+.contacts-menu .contact:hover,
+.contacts-menu .contact:focus {
   color: var(--iriscolor);
 }
 
@@ -261,6 +265,7 @@ link {
 .button.primary:hover,
 .button.primary:focus {
   background-color: var(--oceancolor);
+  font-weight: 500;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.12);
 }
@@ -324,7 +329,7 @@ link {
 
 .substrate {
   background-color: var(--whitecolor);
-  padding: 20px 40px;
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
 }
@@ -343,7 +348,7 @@ link {
   padding-bottom: 30px;
   background-color: var(--whitecolor);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.12);
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 1px 2px rgba(0, 0, 0, 0.12);
 }
 
 .bg-footer {
